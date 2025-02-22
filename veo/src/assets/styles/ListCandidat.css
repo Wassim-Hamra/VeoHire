@@ -1,0 +1,55 @@
+/* Style for Candidate Rows */
+.candidate-row {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid green; /* Green border around each row */
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .candidate-column {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .candidate-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .accept-btn,
+  .reject-btn {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+  }
+  
+  .reject-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .candidate-details {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .candidate-score {
+    font-weight: bold;
+  }
+  
+  .candidate-table {
+    margin-top: 20px;
+  }
+  
