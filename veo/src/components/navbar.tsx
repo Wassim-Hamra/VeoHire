@@ -6,10 +6,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="RecruitUp Logo" /> {/* Utilisez l'image ici */}
+        <img src={logo} alt="RecruitUp Logo" />
       </div>
       <div className="navbar-links">
-        <a href="#about">À propos</a>
+        <a href="https://veoworldwide.com/about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
       </div>
     </nav>
   );

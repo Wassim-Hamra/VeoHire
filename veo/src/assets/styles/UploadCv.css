@@ -1,5 +1,5 @@
 .upload-container {
-    max-width: 600px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -84,6 +84,95 @@
     border-left: 4px solid #4caf50;
   }
   
+  /* User Table */
+  .candidate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .candidate-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #f1f8f1;
+    padding: 10px;
+    border-bottom: 2px solid #4caf50;
+  }
+  
+  .candidate-column {
+    flex: 1;
+  }
+  
+  .candidate-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .candidate-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .candidate-details {
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-left: 4px solid #4caf50;
+    border-radius: 5px;
+  }
+  
+  .candidate-details p {
+    margin: 5px 0;
+  }
+  
+  .candidate-details strong {
+    font-weight: bold;
+  }
+  
+  /* Score */
+  .candidate-score {
+    font-weight: bold;
+    color: #4caf50;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .candidate-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .accept-btn,
+  .reject-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept-btn {
+    background-color: #388e3c;
+  }
+  
+  .reject-btn {
+    background-color: #d32f2f;
+  }
+  
+  .accept-btn:hover {
+    background-color: #2c6e2e;
+  }
+  
+  .reject-btn:hover {
+    background-color: #9c2e2e;
+  }
+  
   /* Version responsive */
   @media (max-width: 768px) {
     .upload-container {
@@ -101,6 +190,15 @@
   
     .text-output pre {
       max-height: 200px;
+    }
+  
+    .candidate-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .candidate-column {
+      margin-bottom: 10px;
     }
   }
   

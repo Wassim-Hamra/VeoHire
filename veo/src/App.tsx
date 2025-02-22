@@ -11,7 +11,6 @@ const App = () => {
   return (
     <Router>
       <Navbar></Navbar>
-      <PresentationSection></PresentationSection>
       <Home></Home>
       <Routes>
         <Route path="/" element={<JobForm />} />
