@@ -6,6 +6,16 @@
 ## VeoHire is an intelligent recruitment platform that leverages classical ML models and agentic AI to assess candidate suitability. By analyzing resumes and extracting key information, the system objectively evaluates a candidate’s skills, experience, and overall fit, ensuring recruiters can quickly identify top talent.
 
 
+# ***Platform Architecture***
+
+![file](platform.png)
+
+# ***Agent Architecture***
+
+![file](graph.png)
+
+
+
 ### Team 
   * **Med Ali Alouani**
   * **Wassim Hamra**
