@@ -1,0 +1,48 @@
+.navbar {
+  background: #fff; /* Modern green gradient */
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);  Green-tinted shadow */
+  position: sticky;
+  height: 10vh;
+  top: 0;
+  z-index: 1000;
+  border-bottom: .1em solid rgba(255,255,255,.2);
+}
+
+
+
+.navbar-logo img {
+  height: 200px; /* Much bigger logo */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #1b5e20; /* Changed to white for better contrast */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #1b5e20; /* Semi-transparent white */
+  color: #fff;
+  transform: translateY(-1px);
+}

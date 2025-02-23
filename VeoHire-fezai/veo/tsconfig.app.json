@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src", // Chemin de base pour les imports absolus
+    "paths": {
+      "@assets/*": ["assets/*"], // Alias pour le dossier assets
+      "@components/*": ["components/*"] // Alias pour le dossier components
+    }
+  },
+  "include": ["src"]
+}

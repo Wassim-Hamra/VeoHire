@@ -1,0 +1,179 @@
+/* Container for the whole list */
+.list-candidates {
+  width: 80%;
+  margin: 10vh auto 20vh auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title styling */
+.list-candidates h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Container for candidate items */
+.candidates-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Each candidate item */
+.candidate-item {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.candidate-item:last-child {
+  border-bottom: none;
+}
+
+.candidate-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Candidate row (always visible) */
+.candidate-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+/* Name */
+.candidate-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Contact details */
+.candidate-contact {
+  flex: 1;
+  text-align: center;
+  color: #666;
+}
+
+/* Score */
+.candidate-score {
+  flex: 0.5;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Actions */
+.candidate-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.accept-btn,
+.reject-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accept-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.accept-btn:hover {
+  background-color: #43a047;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.reject-btn:hover {
+  background-color: #e53935;
+}
+
+/* Expanded candidate details (dropdown effect) */
+.candidate-details {
+  padding: 12px 20px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  animation: slideDown 0.3s ease-out;
+}
+
+.candidate-item.selected {
+  background-color: #bff7d0; /* Light blue highlight */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-confirm-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-cancel-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-confirm-btn:hover {
+  background-color: #43a047;
+}
+
+.modal-cancel-btn:hover {
+  background-color: #e53935;
+}
+
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

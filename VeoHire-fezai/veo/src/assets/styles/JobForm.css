@@ -1,0 +1,39 @@
+/* JobForm.css */
+.job-form {
+    max-width: 600px;
+    margin: 10vh auto 20vh auto;
+    padding: 2vh 2vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-form h2 {
+    color: #1b5e20;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .job-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4a5568;
+  }
+  
+  .job-form input,
+  .job-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .job-form input:focus,
+  .job-form textarea:focus {
+    outline: none;
+    border-color: #48bb78;
+    box-shadow: 0 0 0 2px rgba(72, 187, 120, 0.2);
+  }

@@ -1,0 +1,15 @@
+/* Image.css */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh  2rem 10vh 2em;
+    background: #e8f5e9;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 12px;
+}

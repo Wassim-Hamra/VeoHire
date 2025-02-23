@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "43AoPOaIjpx6CBohJR4pVp2tKHNy3pBPjzUl9fraXA4=",
+  "Source": "dotnet9",
+  "BasePath": "_content/dotnet9",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
