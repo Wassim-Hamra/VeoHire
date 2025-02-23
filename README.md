@@ -8,7 +8,7 @@
 
 # ***Platform Architecture***
 
-![file](paltform.png)
+![file](paltfrom.png)
 
 # ***Agent Architecture***
 
